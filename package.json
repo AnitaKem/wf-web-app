@@ -1,5 +1,6 @@
 {
   "name": "wf-web-app",
+  "homepage": "https://anitakem.github.io/wf-web-app/",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,8 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "ng deploy --base-href=https://anitakem.github.io/wf-web-app/"
   },
   "private": true,
   "dependencies": {
@@ -53,6 +53,7 @@
     "@types/telegram-web-app": "^6.4.0",
     "@typescript-eslint/eslint-plugin": "5.48.2",
     "@typescript-eslint/parser": "5.48.2",
+    "angular-cli-ghpages": "^1.0.5",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
