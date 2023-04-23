@@ -10,4 +10,8 @@ export class TelegramService {
   constructor(@Inject(WINDOW) private window: Window) {
     this.webApp = this.window.Telegram.WebApp;
   }
+
+  getUserData(): WebAppUser | null {
+    return this.webApp.initDataUnsafe.user || null;
+  }
 }

@@ -1,0 +1,10 @@
+.user-info{
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+}

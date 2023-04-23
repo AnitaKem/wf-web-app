@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
 import { SearchInputModule } from './search-input/search-input.module';
 import { TelegramService } from './telegram/telegram.service';
+import { WFCoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,6 +27,7 @@ import { TelegramService } from './telegram/telegram.service';
     TuiAlertModule,
     HeaderModule,
     SearchInputModule,
+    WFCoreModule,
   ],
   providers: [
     { provide: TUI_SANITIZER, useClass: NgDompurifySanitizer },

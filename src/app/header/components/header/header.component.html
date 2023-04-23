@@ -1,0 +1,7 @@
+<tui-app-bar>
+  <div tuiSlot="right">
+    <!-- <a tuiButton appearance="flat">Войти через Telegram</a> -->
+    <app-user-info *ngIf="getUserData() as userData" [userData]="userData">
+    </app-user-info>
+  </div>
+</tui-app-bar>

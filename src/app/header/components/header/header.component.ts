@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TelegramService } from '../telegram/telegram.service';
+import { TelegramService } from 'src/app/telegram/telegram.service';
 
 @Component({
   selector: 'app-header',
@@ -8,4 +8,8 @@ import { TelegramService } from '../telegram/telegram.service';
 })
 export class HeaderComponent {
   constructor(private readonly telegramService: TelegramService) {}
+
+  getUserData(): WebAppUser | null {
+    return this.telegramService.getUserData();
+  }
 }
