@@ -1,4 +1,5 @@
 <tui-app-bar>
+  <app-telegram-login-widget></app-telegram-login-widget>
   <div tuiSlot="right">
     <!-- <a tuiButton appearance="flat">Войти через Telegram</a> -->
     <app-user-info *ngIf="getUserData() as userData" [userData]="userData">

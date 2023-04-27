@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TelegramService } from 'src/app/telegram/telegram.service';
+import { TelegramService } from 'src/app/telegram/services/telegram/telegram.service';
 
 @Component({
   selector: 'app-header',

@@ -1,5 +1,5 @@
 import { Inject, Injectable } from '@angular/core';
-import { WINDOW } from '../window.token';
+import { WINDOW } from '@ng-web-apis/common';
 
 @Injectable({
   providedIn: 'root',

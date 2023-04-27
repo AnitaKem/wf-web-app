@@ -13,7 +13,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
 import { SearchInputModule } from './search-input/search-input.module';
-import { TelegramService } from './telegram/telegram.service';
 import { WFCoreModule } from './core/core.module';
 
 @NgModule({
@@ -29,10 +28,7 @@ import { WFCoreModule } from './core/core.module';
     SearchInputModule,
     WFCoreModule,
   ],
-  providers: [
-    { provide: TUI_SANITIZER, useClass: NgDompurifySanitizer },
-    TelegramService,
-  ],
+  providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
